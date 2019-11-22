@@ -59,6 +59,7 @@
 # print ('helo, ' + z) # do liczb
 
 #----------ZAD 9 -----------------------------
+
 # imie = 'Ala'
 # zwierze = 'kot'
 # print("{0} ma {1}a".format(imie, zwierze))
@@ -85,11 +86,11 @@
      #print(samochody[idx] + " ma ilosc drzwi " + str(ilosc[idx]))
 
 #----------ZAD 12 -----------------------------
-#
+
 # samolot = {'name': 'boing',
 #             'przebieg': '1000',
 #             'type': 'pasazerski'}
-#
+
 # for key, value in samolot.iteritems():
 #     print("{0}: {1}".format(key, value))
 
@@ -212,8 +213,8 @@
 #----------ZAD 333-----------------------------
 
 # import pprint
-#
-#
+
+
 # def main():
 #     koszyk = [
 #                     {"nazwa": "ziemniaki","cena": 5, "VAT": 23, "unit": "kg"},
@@ -221,26 +222,26 @@
 #                     {"nazwa": "marchew","cena": 4, "VAT": 23, "unit": "kg"},
 #                     {"nazwa": "pietruszka","cena": 20, "VAT": 23, "unit": "kg"},
 #                     {"nazwa": "seler","cena": 9, "VAT": 23, "unit": "kg"}]
-#
+
 #     f = open("koszyk.csv", "w")
 #     for poz in koszyk:
 #         for pole in ['nazwa', 'cena', 'VAT', 'unit']:
 #             f.write("{0},".format(poz[pole]))
 #         f.write('\n')
 #     f.close()
-#
-#
-#
+
+
+
 #     koszyk2 = []
 #     print("koszyk2")
-#
+
 #     f2 = open("koszyk.csv", "r")
 #     calosc = f2.read()
 #     linie = calosc.split('\n')
 #     for l in linie:
 #         if len(l) > 0:
 #             print(l)
-#
+
 # if __name__ == "__main__":
 #     main()
 
@@ -248,41 +249,96 @@
 
 #----------ZAD 333m-----------------------------
 
-import pprint
+# import pprint
 
-def main():
-    koszyk = [
-                    {"nazwa": "ziemniaki","cena": 5, "VAT": 23, "unit": "kg"},
-                    {"nazwa": "jajka","cena": 1, "VAT": 23, "unit": "szt"},
-                    {"nazwa": "marchew","cena": 4, "VAT": 23, "unit": "kg"},
-                    {"nazwa": "pietruszka","cena": 20, "VAT": 23, "unit": "kg"},
-                    {"nazwa": "seler","cena": 9, "VAT": 23, "unit": "kg"}]
+# def main():
+#     koszyk = [
+#                     {"nazwa": "ziemniaki","cena": 5, "VAT": 23, "unit": "kg"},
+#                     {"nazwa": "jajka","cena": 1, "VAT": 23, "unit": "szt"},
+#                     {"nazwa": "marchew","cena": 4, "VAT": 23, "unit": "kg"},
+#                     {"nazwa": "pietruszka","cena": 20, "VAT": 23, "unit": "kg"},
+#                     {"nazwa": "seler","cena": 9, "VAT": 23, "unit": "kg"}]
 
-    f = open("koszyk.csv", "w")
-    for poz in koszyk:
-        for pole in ['nazwa', 'cena', 'VAT', 'unit']:
-            f.write("{0},".format(poz[pole]))
-        f.write('\n')
-    f.close()
+#     f = open("koszyk.csv", "w")
+#     for poz in koszyk:
+#         for pole in ['nazwa', 'cena', 'VAT', 'unit']:
+#             f.write("{0},".format(poz[pole]))
+#         f.write('\n')
+#     f.close()
 
-    koszyk2 = []
-    print("#### koszyk2")
+#     koszyk2 = []
+#     print("#### koszyk2")
 
-    f2 = open("koszyk.csv", "r")
-    calosc = f2.read()
-    linie = calosc.split('\n')
-    for l in linie:
-        produkt = {}
-        if len(l) > 0:
-            pola = l.split(',')
-            produkt['nazwa'] = pola[0]
-            produkt['cena'] = pola[1]
-            koszyk2.append(produkt)
+#     f2 = open("koszyk.csv", "r")
+#     calosc = f2.read()
+#     linie = calosc.split('\n')
+#     for l in linie:
+#         produkt = {}
+#         if len(l) > 0:
+#             pola = l.split(',')
+#             produkt['nazwa'] = pola[0]
+#             produkt['cena'] = pola[1]
+#             koszyk2.append(produkt)
 
-    pprint.pprint(koszyk2)
+#     pprint.pprint(koszyk2)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
 #----------ZAD -----------------------------
+
+
+# for i in range(40):
+#     print("Proszę wcisnąć literę n lub c")
+#     d = input()
+#     if (d == "n" or d == "c"):
+#         print("Dziękuje!")
+#         break
+#     else:
+#         print("Błąd!")
+
+#----------ZAD definowanie funkcji-----------------------------
+# def mm():
+#     print ('podaj a'); a = input()
+#     print ('podaj b'); b = input()
+#     if a > b:
+#         print(a, ' jest większe')
+#     elif a == b:
+#         print(a, 'jest równe')
+#     elif a < b:
+#         print (b, "jest większe")
+# mm()
+    
+#----------ZAD -----------------------------
+# def mm(x,y):
+#     if x > y:
+#         return x
+#     else:
+#         return y
+
+# print (mm(9,4))
+
+
+#----------ZAD -----------------------------
+
+# a = list(range(1,9))
+
+# print("Moja lisa:",a)
+# print("----------------")
+# for s in a: #wykorzystuje nową listę do pętli
+#    if s==5: # ograniczenie listy do 5
+#       break
+#    print(s)
+#----------ZAD -----------------------------
+    
+# for x in [1, 2, 3]:
+#     for y in 'abc':
+#         print (x,y)
+
+for a in range(6):
+    a = a + 1
+    while a ==5:
+        print("Znalazłem 5!")
+        break
+    print(a)
