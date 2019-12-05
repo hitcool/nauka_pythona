@@ -335,10 +335,26 @@
 # for x in [1, 2, 3]:
 #     for y in 'abc':
 #         print (x,y)
+#----------ZAD -----------------------------
+# for a in range(6):
+#     a = a + 1
+#     while a ==5:
+#         print("Znalazłem 5!")
+#         break
+#     print(a)
+#----------ZAD -----------------------------
+# suma_liczb = 0
+# for a in range(5):
+#     nowa_wartość = int(input("Wprowadź dowolną liczbę od 1 do 10:  "))
+#     if nowa_wartość == 5:
+#         suma_liczb +=1
+# print("Użytkownik wybrał",suma_liczb,"razy liczbę 5.")
 
-for a in range(6):
-    a = a + 1
-    while a ==5:
-        print("Znalazłem 5!")
-        break
-    print(a)
+
+suma_liczb = 0
+
+for a in range(5):
+    wartosc = int(input('Wprowadz liczbę: '))
+    if wartosc == 5:
+        suma_liczb += 1
+print('Użytkownik wybrał', suma_liczb, 'razy 5' )
