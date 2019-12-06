@@ -17,14 +17,15 @@
 # d=float(10)/3
 # print(d)
 
+
 #----------ZAD 7 -----------------------------
 # marka = 'Pegout'
 # ilosc_drzwi = 5
 # pojemnosc = 1.3
-#
-#
+
+
 # marka_upp = marka.upper()
-#
+
 # marka_up = marka.lower()
 # print("Samochod " + marka + " ma " + str(ilosc_drzwi))
 # print("Marka " + marka_up)
@@ -43,8 +44,8 @@
 # z = input()
 # zz = len(z)
 # haslo = (len(z)-2) * "*"
-#
-#
+
+
 # if zz == 0:
 #     print("Haslo puste")
 # elif zz < 3:
@@ -85,7 +86,7 @@
 #     print("idx: " + str(idx) + " : " + samochody[idx])
      #print(samochody[idx] + " ma ilosc drzwi " + str(ilosc[idx]))
 
-#----------ZAD 12 -----------------------------
+#----------ZAD 12 Slownik - uruchom w Pythonie 2 -----------------------------
 
 # samolot = {'name': 'boing',
 #             'przebieg': '1000',
@@ -97,24 +98,38 @@
 # for key in samolot:
 #     print("{0}: {1}".format(key, samolot[key]))
 
+#----------ZAD 12 cwiczenie -----------------------------
+
+# kontakt = {
+#     "Jan": 1,
+#     "Ala": 2,
+#     "Ela": 3
+# }
+# for imie, numer in kontakt.iteritems():
+#     print "%s ma numer telefonu: %d" % (imie, numer)
+
+
 #----------ZAD 13 -----------------------------
 
 # def print_dict(d):
 #     for key in samolot:
 #         print("{0}: {1}".format(key, d[key]))
-#
+
 # if __name__ == "__main__":
 #     samolot = {'name': 'boing',
 #                 'przebieg': '1000',
 #                 'type': 'pasazerski'}
+
+
+#     print_dict(samolot)
 #     print_dict(samolot)
 
 #----------ZAD 14 -----------------------------
-#
+
 # def calucate_vat(netto):
 #     vat = float(netto * 23)/100
 #     return vat
-#
+
 # if __name__ == "__main__":
 #     vat = calucate_vat(1000)
 #     print("{0}".format(vat))
@@ -289,25 +304,28 @@
 #----------ZAD -----------------------------
 
 
-# for i in range(40):
-#     print("Proszę wcisnąć literę n lub c")
+# for i in range(10):
+#     print("Prosze wcisnac litere n lub c")
 #     d = input()
 #     if (d == "n" or d == "c"):
-#         print("Dziękuje!")
+#         print("Dziekuje!")
 #         break
 #     else:
-#         print("Błąd!")
+#         print("Blad!")
 
 #----------ZAD definowanie funkcji-----------------------------
+
+
+
 # def mm():
 #     print ('podaj a'); a = input()
 #     print ('podaj b'); b = input()
 #     if a > b:
-#         print(a, ' jest większe')
+#         print(a, ' jest wieksze')
 #     elif a == b:
-#         print(a, 'jest równe')
+#         print(a, 'jest rowne')
 #     elif a < b:
-#         print (b, "jest większe")
+#         print (b, "jest wieksze")
 # mm()
     
 #----------ZAD -----------------------------
@@ -326,35 +344,41 @@
 
 # print("Moja lisa:",a)
 # print("----------------")
-# for s in a: #wykorzystuje nową listę do pętli
+# for s in a: #wykorzystuje nowa liste do petli
 #    if s==5: # ograniczenie listy do 5
 #       break
 #    print(s)
 #----------ZAD -----------------------------
     
-# for x in [1, 2, 3]:
-#     for y in 'abc':
-#         print (x,y)
-#----------ZAD -----------------------------
+for x in [1, 2, 3]:
+    for y in 'abc':
+        print (x,y)
+# ----------ZAD -----------------------------
 # for a in range(6):
 #     a = a + 1
 #     while a ==5:
-#         print("Znalazłem 5!")
+#         print("Znalazlm 5!")
 #         break
 #     print(a)
 #----------ZAD -----------------------------
 # suma_liczb = 0
 # for a in range(5):
-#     nowa_wartość = int(input("Wprowadź dowolną liczbę od 1 do 10:  "))
-#     if nowa_wartość == 5:
+#     nowa_wartosc = int(input("Wprowadz dowolna liczbe od 1 do 10:  "))
+#     if nowa_wartosc == 5:
 #         suma_liczb +=1
-# print("Użytkownik wybrał",suma_liczb,"razy liczbę 5.")
+# print("Uztkownik wybral",suma_liczb,"razy liczbe 5.")
 
 
-suma_liczb = 0
+# suma_liczb = 0
 
-for a in range(5):
-    wartosc = int(input('Wprowadz liczbę: '))
-    if wartosc == 5:
-        suma_liczb += 1
-print('Użytkownik wybrał', suma_liczb, 'razy 5' )
+# for a in range(5):
+#     wartosc = int(input('Wprowadz liczbe: '))
+#     if wartosc == 5:
+#         suma_liczb += 1
+# print('Uzytkownik wybral', suma_liczb, 'razy 5' )
+
+
+#----------ZAD -----------------------------
+# for a in range(5):
+#     print (a)
+
